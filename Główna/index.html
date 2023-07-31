@@ -1,0 +1,262 @@
+<!-- designid by Szymon Jagiełło -->
+<!DOCTYPE html>
+<html lang="PL-pl"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Szymon Jagiełło - Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="active.css">
+            <!--script to odnośnik do strony z ikonami-->
+        <script src="https://kit.fontawesome.com/77165ab45f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+<!-----------------start----------------->
+        <div id="header">
+            <div class="kontener">
+                <nav>
+                    <img src="images/logomoje.png " class="logo" >  <!--Logo uytkownika do podmienienia aktualnie zrobione w kricie na szybko XD-->
+                    <ul id="sidemenu">
+                            <!-- lista menu gdzie co jest -->
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <!-- ikona zamyknia menu tylko dla urzytkowników mobilnych -->
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <!-- Ikona menu dla urzytkowników mobilnych tylko -->
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Designer </p> <!--tytuł pracownika-->
+                    <!-- kródki wstęp do strony -->
+                    <h1>Hi I'm <span>Szymon</span> Jagiełło<br> From Poland</h1>
+                </div>
+            </div>
+        </div>
+
+<!-----------------about----------------->
+
+        <div id="about">
+            <div class="kontener">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">  <!--Zdjęcie Uytkownika do podmienienia aktualne z pinteresta po prostu pasujące-->
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1> <!--Tytuł miejsca-->
+                            <!-- Opis o mnie -->
+                        <p>Hi, my name is Szymon and I'm from Poland. I like working in a team, but I also work well alone. In my free time, I like to spend it outdoors, for example mountain biking or hiking I am interested in cybersecurity and programming. I also like reading fantasy and adventure books. After reading a book, I often like to watch a movie to judge which was better, the book or the movie. In my free time, when the weather is bad or a trip to nature is impossible, I go to the gym and lead an active lifestyle.</p>
+                            <!--lista about me-->
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                            <!--skills opis-->
+                        <div class="tab-contents active-tab" id="skills"> 
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                                <li><span>Cybersecurity Developer</span><br>Check security off apps</li>
+                            </ul>
+                        </div>
+                            <!--experience opis-->
+<!-- SEGZ -->
+                        <div class="tab-contents" id="experience"> 
+                            <ul>
+                                <li><span>2025 - now</span><br>Apps and Web security in Lockheed Martin</li>
+                                <li><span>2023-2025</span><br>Front-End and Python Developer in IBM</li>
+                            </ul>
+                        </div>
+                            <!--education opis-->
+                        <div class="tab-contents" id="education"> 
+                            <ul>
+                                <li><span>2022-2027</span><br>IT specialist in Zespół Szkół nr 2 w Dębicy</li>
+                                <li><span>2027-2032</span><br>Cybersecurity Dev in Politechnika Warszawska</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-----------------services----------------->
+
+        <div id="services">
+            <div class="kontener">
+                <h1 class="sub-title">My Services</h1> <!--Tytuł miejsca-->
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i> <!--ikona-->
+                        <h2>Web Design</h2> <!--umiejętność-->
+                            <!--opis-->
+                        <p>I can write a full-fledged and working website for you or your company in html, css and then animate it and make it responsive thanks to the JavaScript programming language</p>
+                        <a href="../Web designer/index.html">Learn more</a> <!--przycisk czytaj więcej-->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i> <!--ikona-->
+                        <h2>Cybersecurity Developer</h2> <!--umiejętność-->
+                            <!--opis-->
+                        <p>With my help, you can create a ,seciure application, website, etc. for yourself or your company.</p>
+                        <a href="../cyb/index.html">Learn more</a> <!--przycisk czytaj więcej-->
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i> <!--ikona-->
+                        <h2>App Design</h2> <!--umiejętność-->
+                            <!--opis-->
+                        <p>Your company, thanks to my help, will be able to have a working, cool-looking and distinctive mobile application. Thanks to my skills, the application can be written for any platform.</p>
+                        <a href="../App designer/index.html">Learn more</a> <!--przycisk czytaj więcej-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-----------------portfolio----------------->
+
+        <div id="portfolio">
+            <div class="kontener">
+                <h1 class="sub-title">My Work</h1> <!--Tytuł miejsca-->
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png"> <!--Zdjęcie projektu-->
+                        <div class="layer">
+                            <h3>Social Media App</h3> <!--Nazwa rzeczy dodanej do portfolio-->
+                            <p>The app connect you yo the talented people around the world. Download it from play store.</p> <!--Opis rzeczy z portfolio-->
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> <!--Iokona z linkiem-->
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png"> <!--Zdjęcie projektu-->
+                        <div class="layer">
+                            <h3>Music App</h3> <!--Nazwa rzeczy dodanej do portfolio-->
+                            <p>With this application you can listen to the best songs chosen by the community. Download it from play store.</p> <!--Opis rzeczy z portfolio-->
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> <!--Iokona z linkiem-->
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png"> <!--Zdjęcie projektu-->
+                        <div class="layer">
+                            <h3>Online Shopping App</h3> <!--Nazwa rzeczy dodanej do portfolio-->
+                            <p>This app allows you to buy things cheaper and faster than the competition. Download it from play store.</p> <!--Opis rzeczy z portfolio-->
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> <!--Iokona z linkiem-->
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a> <!--Przycisk zobacz więcej w portfolio-->
+            </div>
+        </div>
+
+<!-----------------contact----------------->
+
+        <div id="contact">
+            <div class="kontener">
+                <div class="row">
+                    <!--Dane podane-->
+                    <div class="contact-left">
+                            <!--Tytuł miejsca-->
+                        <h1 class="sub-title">Contact Me</h1> 
+                            <!--Mail-->
+                        <p><i class="fa-solid fa-paper-plane"></i> szymonj183@gmail.com</p>
+                            <!--Telefon-->
+                        <p><i class="fa-solid fa-phone"></i> +48 609-764-221</p>
+                            <!--Ikony jako guziki do socjali-->
+                        <div class="social-icons">
+                            <a href=https://www.facebook.com/profile.php?id=100027894091926"><i class="fa-brands fa-facebook"></i></a> <!--Facebook-->
+                            <a href="https://twitter.com/SciMon16"><i class="fa-brands fa-twitter"></i></a> <!--Twitter-->
+                            <a href="https://www.instagram.com/szymonj183/"><i class="fa-brands fa-instagram"></i></a> <!--Instagram-->
+                            <a href="https://www.youtube.com/channel/UCa9s1wp6LyXavP_5Ow9guxg"><i class="fa-brands fa-youtube"></i></a> <!--YouTube-->
+                            <a href="https://www.linkedin.com/in/szymon-jagiełło-52a624280/"><i class="fa-brands fa-linkedin"></i></a> <!--LinkedIn-->
+                        </div>
+                        <a href="../Szymon Jagiełło - CV/index.html" class="btn btn2">My CV</a>
+                    </div>
+                    <!--Tablica do wysyłania ze strony-->
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                                <!--Pole do wpisywania twoje imie-->
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                                <!--Pole do wpisywania twój mail-->
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                                <!--Pole do wpisywania twoja wiadomość-->
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <!--Guzik do wysyłania-->
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <!-- <span id="msg">Hi, thx for send me message!</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="copyright"> <!--stopka z podpisem i serduszkiem <3-->
+                <p>Made by Szymon Jagiełlo <i class="fa-solid fa-heart" style="color: #ff004f;"></i></p>
+            </div>
+        </div>
+
+<!-----------------JavaScript----------------->
+
+            <!-----------------about-----------------> 
+
+        <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname)
+            {
+                for(tablink of tablinks)
+                {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents)
+                {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+            <!-----------------menu mobilne-----------------> 
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu")
+
+            function openmenu()
+            {
+                sidemenu.style.right = "0";
+            }
+            function closemenu()
+            {
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+            <!-----------------wysyłanie wiadomości-----------------> 
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz6CM8lpCKkNtUWLcRvLCAZrQugogik8ijKG1AmYiUhqmCf7Josv9RWOH3Rc2VoRfuR/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+              
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                     msg.innerHTML = "Message sent sucessfully"
+                     setTimeout(function(){
+                        msg.innerHTML = ""
+                     },5000)
+                     form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html> 

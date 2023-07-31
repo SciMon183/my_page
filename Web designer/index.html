@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designer</title>
+    <link rel="stylesheet" href="active.css">
+    <link href="https://fonts.googlespis.com/css2?family=Roboto:wght@400;700display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="kontener1">
+        <div class="header">
+            <div class="navbar">
+                <nav>
+                    <img src="../Główna/images/logomoje.png" class="logo">
+                        <ul>
+                            <li><a href="../Główna/index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#clients">Clients</a></li>
+                        </ul>
+                </nav>
+            </div>
+        </div>
+<!-- -------------------------prace--------------------- -->
+        <div class="prace">
+            <!-- kolumna pierwsza -->
+            <div class="col-1">
+                <h1><i>I'm <span>Web</span> Designer</i></h1>
+                <p>
+                    I have been designing and writing websites for about 6 years. <br>I write websites in languages ​​such as html css and javascript. <br>With my help, your company can have websites such as these:
+                </p>
+            </div>
+
+            <!-- kolumna druga -->
+
+            <div class="col-2">
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h4>GitHub Page</h4>
+                            <p>The main page you see when you first go to GitHub is mostly designed and written by me.</p>
+                            <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h4>Apple Page</h4>
+                            <p>The main page you see when you first go to Apple page is mostly designed and written by me.</p>
+                            <a href="https://www.apple.com"><i class="fa-brands fa-apple"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h4>ReplIT Page</h4>
+                            <p>The main page you see when you first go to Repl page is mostly designed and written by me.</p>
+                            <a href="https://replit.com"><i class="fa-solid fa-vr-cardboard"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h4>IBM Page</h4>
+                            <p>The main page you see when you first go to IBM page is mostly designed and written by me.</p>
+                            <a href="https://www.ibm.com/us-en"><i class="fa-solid fa-database"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -----------------about---------------- -->
+    <div class="kontener2">
+        <div id="about">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/code1.png">  <!--Zdjęcie Uytkownika do podmienienia aktualne z pinteresta po prostu pasujące-->
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About My Work</h1> <!--Tytuł miejsca-->
+                            <!-- Opis o mnie -->
+                        <p>Hi, I have been dealing with Web Designing for about 6 years, of which professionally for 3 years. My work currently powers the websites of such giants as GitHub, IBM and the like. I am currently writing custom websites for individuals and companies. The best example of a website for a private person may be my portfolio you are looking at right now. I try to combine the modern style of the website and combine it with the client's requirements.</p>
+                            <!--lista about me-->
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                            <!--skills opis-->
+                        <div class="tab-contents active-tab" id="skills"> 
+                            <ul>
+                                <li><span>Web Designing</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>I can write a code in HTML CSS and JavaScript</li>
+                                <li><span>Servers</span><br>I can build and services any server.</li>
+                                <li><span>Cybersecurity Developer</span><br>Check security off web pages</li>
+                            </ul>
+                        </div>
+                            <!--experience opis-->
+                        <div class="tab-contents" id="experience"> 
+                            <ul>
+                                <li><span>IBM page</span><br>The main page you see when you first go to IBM page is mostly designed and written by me.</li>
+                                <li><span>GitHub page</span><br>The main page you see when you first go to GitHub is mostly designed and written by me.</li>
+                                <li><span>ReplIT page</span><br>he main page you see when you first go to Repl page is mostly designed and written by me.</li>
+                                <li><span>Apple page</span><br>The main page you see when you first go to Apple page is mostly designed and written by me.</li>
+                            </ul>
+                        </div>
+                            <!--education opis-->
+                        <div class="tab-contents" id="education"> 
+                            <ul>
+                                <li><span>2022-2027</span><br>IT specialist in Zespół Szkół nr 2 w Dębicy</li>
+                                <li><span>2027-2032</span><br>Web Dev in Politechnika Warszawska</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+<!-- ------------------klienci-------------- -->
+
+    <div class="kontener3">
+        <div id="clients">
+            <div id="portfolio">
+                    <h1 class="sub-title">My Biggest Clients</h1> <!--Tytuł miejsca-->
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/work-1.png"> <!--Zdjęcie projektu-->
+                            <div class="layer">
+                                <h3>IBM</h3> <!--Nazwa rzeczy dodanej do portfolio-->
+                                <p>The app connect you yo the talented people around the world. Download it from play store.</p> <!--Opis rzeczy z portfolio-->
+                                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> <!--Iokona z linkiem-->
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/work-2.png"> <!--Zdjęcie projektu-->
+                            <div class="layer">
+                                <h3>Apple</h3> <!--Nazwa rzeczy dodanej do portfolio-->
+                                <p>With this application you can listen to the best songs chosen by the community. Download it from play store.</p> <!--Opis rzeczy z portfolio-->
+                                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> <!--Iokona z linkiem-->
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/work-3.png"> <!--Zdjęcie projektu-->
+                            <div class="layer">
+                                <h3>GitHub</h3> <!--Nazwa rzeczy dodanej do portfolio-->
+                                <p>This app allows you to buy things cheaper and faster than the competition. Download it from play store.</p> <!--Opis rzeczy z portfolio-->
+                                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> <!--Iokona z linkiem-->
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!-- script -->
+
+
+            <!-----------------about-----------------> 
+
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                    var tabcontents = document.getElementsByClassName("tab-contents");
+        
+                    function opentab(tabname)
+                    {
+                        for(tablink of tablinks)
+                        {
+                            tablink.classList.remove("active-link");
+                        }
+                        for(tabcontent of tabcontents)
+                        {
+                            tabcontent.classList.remove("active-tab");
+                        }
+                        event.currentTarget.classList.add("active-link");
+                        document.getElementById(tabname).classList.add("active-tab");
+                    }
+        
+                </script>
+</body>
+</html>

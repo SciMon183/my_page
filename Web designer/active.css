@@ -1,0 +1,231 @@
+
+/* menu logo i strona */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+}
+.kontener1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,1)),url(img/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 5%;
+}
+.logo{
+    width: 140px;   
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:  10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s ;
+}
+nav ul li a:hover::after{
+     width: 100% ;
+}
+
+/* robota */
+
+.prace{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.prace .col-1 h1{
+    color: #fff;
+    font-size: 70px;
+}
+.prace .col-1 p{
+    color: #fff;
+    font-size: 19px;
+    line-height: 23px;
+    margin-top: 22px;
+}
+.prace span{
+    color: #ff004f;
+}
+.col-1{
+    flex-basis: 50%;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.6s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.6s;
+}
+.layer a{
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: whitesmoke;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.layer h4{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.layer p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+/* ---------------------about--------------------- */
+
+.kontener2{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(rgba(0,0,0,0.6), #511b2c); */
+    background: #080808;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 5%;
+    color: #fff;
+}
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100% ;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60% ;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: 0.6s;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom:  -8px ;
+    transition: 0.6s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 19px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* --------------------klients-------------------- */
+
+.kontener3{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(#511b2c, rgba(0,0,0,0.6)); */
+    background: #080808;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 5%;
+    color: #fff;
+}
+.sub-title{
+    font-size: 60px;
+}
